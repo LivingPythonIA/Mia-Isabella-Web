@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestra colección de ropa exclusiva y encuentra lo que te apasiona.">
+    <title>Mia Isabella Diseño - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <img src="logo.jpg" alt="Logo de Mia Isabella Diseño" class="logo">
+        <h1>Mia Isabella Diseño</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html" aria-current="page">Productos</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto y Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="productos-y-carrito">
+            <!-- Sección de Productos -->
+            <section id="productos">
+                <h2>Nuestra Colección</h2>
+                <div class="product-grid" id="product-grid">
+                    <!-- Tarjeta de Producto 1 -->
+                    <div class="product-card" data-id="1">
+                        <img src="images/producto1.jpg" alt="Producto 1" class="product-image">
+                        <h3>Remera</h3>
+                        <p>Talle S al XXL</p>
+                        <p><strong>Precio: $1000</strong></p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <!-- Tarjeta de Producto 2 -->
+                    <div class="product-card" data-id="2">
+                        <img src="images/producto2.jpg" alt="Producto 2" class="product-image">
+                        <h3>Jeans</h3>
+                        <p>Talle 38 al 50</p>
+                        <p><strong>Precio: $20000</strong></p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <!-- Tarjeta de Producto 3 -->
+                    <div class="product-card" data-id="3">
+                        <img src="images/producto3.jpg" alt="Producto 3" class="product-image">
+                        <h3>Conjunto</h3>
+                        <p> Jeans y sueter</p>
+                        <p><strong>Precio: $40000</strong></p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <!-- Tarjeta de Producto 4 -->
+                    <div class="product-card" data-id="4">
+                        <img src="images/producto4.jpg" alt="Producto 4" class="product-image">
+                        <h3>Polo </h3>
+                        <p>Talle S al XXL</p>
+                        <p><strong>Precio: $3000</strong></p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </section>
+               <!-- Carrito de Compras -->
+               <section id="carrito">
+                <div class="carrito-container">
+                    <h2>Carrito de Compras</h2>
+                    <div id="productos-carrito"></div>
+                    <div id="total">Total: $0</div>
+                    <button id="limpiar-carrito" style="display:none;">Limpiar Carrito</button>
+                    <button id="checkout-button">Finalizar Compra</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mia Isabella Diseño. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+

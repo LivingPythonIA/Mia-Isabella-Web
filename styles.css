@@ -1,0 +1,448 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/fondo.jpg"); /* Ruta de tu imagen */
+    background-size: cover; /* La imagen se ajustará para cubrir el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* La imagen queda fija al hacer scroll */
+    font-family: 'Lato', sans-serif; /* Fuente principal */
+    color: #333; /* Color base del texto */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+header {
+    background-color: #a6cf8fe9; /* Azul claro, puedes elegir tu color */
+    padding: 20px;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegación */
+nav {
+    background-color: #4682b4; /* Un azul más oscuro */
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto en blanco */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Dorado al pasar el mouse */
+}
+
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    background-color: rgba(33, 33, 33, 0.55);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Títulos con sombra */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    color: #222222; /* Negro suave */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil para mejor contraste */
+}
+
+/* Texto principal */
+body, p {
+    font-family: 'Poppins', sans-serif; /* Moderna y ligera */
+    color: #444; /* Texto ligeramente más oscuro */
+}
+
+/* Contenedor con fondo semitransparente */
+.fondo-recuadro {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Sección de productos */
+#productos {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo con opacidad */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejoras para las tarjetas de productos */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Botones con ajuste */
+.product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Texto con fondo adicional en secciones */
+.seccion-texto {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con transparencia */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: justify;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sombras adicionales para texto y botones */
+.review-card, form button {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .carrito-container {
+        width: 90%;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Carrito de Compras */
+.carrito-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333; /* Texto oscuro */
+    font-family: 'Poppins', sans-serif; /* Fuente legible */
+    line-height: 1.6;
+}
+
+/* Encabezado del Carrito */
+.carrito-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #222;
+}
+
+/* Elementos del Carrito */
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+/* Botones de eliminar y acciones */
+.carrito-btn {
+    background-color: #dc3545; /* Rojo elegante */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-btn:hover {
+    background-color: #c82333;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.carrito-acciones button {
+    background-color: #007bff; /* Azul moderno */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-acciones button:hover {
+    background-color: #0056b3;
+}
+
+/* Total */
+.carrito-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* Fondo principal */
+body {
+    background-color: #f8f8f8;
+    background-image: url("images/fondo.jpg"); 
+    background-size: cover;
+    opacity: 0.9; /* Reducimos opacidad */
+}
+
+/* Caja de bienvenida */
+.bienvenida-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Párrafo */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Enlaces */
+a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Imagen principal */
+.img-principal {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Contenedor de reseñas */
+#reseñas {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#reseñas h2, #reseñas h3 {
+    text-align: center;
+    color: #1f3c1f;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Tarjetas de reseñas */
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+    margin: 10px 0;
+}
+
+.review-card strong {
+    color: #339d31;
+    font-size: 1.1em;
+}
+
+/* Formulario de reseñas */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4682b4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(50, 152, 236, 0.5);
+}
+
+form button {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #5a9bd3;
+}
