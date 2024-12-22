@@ -43,4 +43,4 @@ Bienvenido al proyecto **Mia Isabella Diseño**, una tienda de ropa en línea do
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tu-usuario/mia-isabella-web.git
+   git clone https://github.com/tu-usuario/mia-isabella-diseno.git

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Remera",
+        "descripcion": "Talle S al XXL",
+        "precio": 1000,
+        "imagen": "images/producto1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Jeans",
+        "descripcion": "Talle 38 al 50",
+        "precio": 20000,
+        "imagen": "images/producto2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Conjunto",
+        "descripcion": "Jeans y sueter",
+        "precio": 40000,
+        "imagen": "images/producto3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Polo",
+        "descripcion": "Talle S al XXL",
+        "precio": 3000,
+        "imagen": "images/producto4.jpg"
+    }
+]
